@@ -1,4 +1,4 @@
-package edu.poniperro.arnoldEnumType.test;
+package edu.poniperro;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
@@ -96,7 +96,7 @@ public class ArnoldEnumTypeTest {
         }
         assertThat(planetasIncluidos).isEqualTo(4);
 
-        for(Planeta planeta : Planeta.getGigantesGaseosos()){
+        for(Planeta planeta : Planeta.getPlanetasGaseosos()){
             assertThat(planeta.name()).isIn(gigantesGaseosos);
         }
     }
